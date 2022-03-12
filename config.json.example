@@ -1,0 +1,16 @@
+{
+	"credentials" : {
+		"username" : "your_email@test.com",
+		"password" : "your_password"
+	},
+	"discord_urls" : [
+		{
+			"server_name" : "ArbitrumNews Dao",
+			"url" : "https://discord.com/channels/887516450053562418/927379865722843197" 
+		},
+		{
+			"server_name" : "Los Muertos",
+			"url" : "https://discord.com/channels/935507188020019281/937725196557746247"
+		}
+	]
+}
