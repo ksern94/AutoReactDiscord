@@ -14,7 +14,7 @@ Things to note:
 - Python 3.6+
 - [pip](https://pip.pypa.io/en/stable/) package installer
 - Python [virtual environment](https://virtualenv.pypa.io/en/latest/)
-- [chromedriver](https://chromedriver.chromium.org/downloads) based off your OS & Chrome version
+- ~~[chromedriver](https://chromedriver.chromium.org/downloads) based off your OS & Chrome version~~
 
 ### File configuration 
 
