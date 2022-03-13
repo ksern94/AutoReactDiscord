@@ -8,15 +8,17 @@ white=$(tput sgr0)
 setup_virtualenv() {
     echo "🛠 $white Removing existing venv-auto-discord"
     rm -rf venv-auto-discord
+    # rd /s /q venv-auto-discord
     virtualenv venv-auto-discord
     echo "🔧 $white Activating virtual environment"
-    source venv-auto-discord/bin/activate
+    # source venv-auto-discord/bin/activate
+    venv-auto-discord\\Scripts\\activate
 }
 
 pip_install() {
     echo "🐍 $white Installing Python dependencies with pip"
     pip3 install -r requirements.txt
-    ln -s /usr/lib/python3/dist-packages/gi venv-auto-discord/lib/python3.8/site-packages/
+    # ln -s /usr/lib/python3/dist-packages/gi venv-auto-discord/lib/python3.8/site-packages/
     echo "$green✔$white Completed pip install"
 }
 

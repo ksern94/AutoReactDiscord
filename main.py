@@ -8,7 +8,7 @@ import time
 import re
 
 
-from lib.core import AutoDiscord
+from lib.core import AutoReactDiscord
 
 if __name__ == "__main__":
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
         config = json.load(u)
     # end with
     
-    bot = AutoDiscord()
+    bot = AutoReactDiscord()
 
     isHeadless = False
     if(args.background):
@@ -41,6 +41,9 @@ if __name__ == "__main__":
             print(f"Going to Server: {server_name}")
             bot.go_to_discord_server(browser, url)
         #end for
+
+        print("---loop completed. wait for 60sec to start loop---")
+        time.sleep(60) #wait 1minute
     # end while
 
     input("Press the <ENTER> key to end...")

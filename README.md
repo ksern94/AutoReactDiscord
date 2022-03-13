@@ -1,4 +1,13 @@
-# AutoDiscord
+# AutoReactDiscord
+This script auto reacts :tada: emoji to last 3 messages in each channel discord url. 
+
+Reacts to `messageAuthor` with `["giveaway"]` included
+Exclude react when `botTag` is not found and `messageContent` includes `["grat","congratulation","ended"]`
+
+Things to note:
+- slow internet might cause script to not work well.
+- after every loop completed, wait for 60sec to restart loop
+
 ### Software :computer:
 
 - Python 3.6+
@@ -19,4 +28,4 @@ This project is tested and developed on Window. You can probably get this up and
 
 2. Run `./setup.sh` 
 
-3. Run `python3 main.py`
+3. Run `python3 main.py` or `python3 main.py --bg` to run in background without browser showing

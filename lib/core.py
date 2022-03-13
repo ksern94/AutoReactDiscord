@@ -14,7 +14,7 @@ import chromedriver_binary  # Adds chromedriver binary to path
 
 logging.getLogger().setLevel(logging.WARNING)
 
-class AutoDiscord:
+class AutoReactDiscord:
     """
     This is a bot to automatically react to NFT giveaways across multiple discord guild/server
     """
@@ -89,7 +89,7 @@ class AutoDiscord:
                 content = lastMessage.find_element(by=By.CSS_SELECTOR, value="div[class^='contents-']")
                 messageAuthor = content.find_element(by=By.CSS_SELECTOR, value="h2 span[id^='message-username'] span[class^='username-']").get_attribute('innerText')
 
-                logging.info(f"Message Author: {messageAuthor}")
+                print(f"Message Author: {messageAuthor}")
 
                 # if not giveaway bot we dont react
                 giveawayBotName = ["giveaway"]
@@ -100,21 +100,21 @@ class AutoDiscord:
                 #     isGiveaway = False
 
             except NoSuchElementException:
-                logging.info('💻 messageAuthor not found.')
+                print('💻 messageAuthor not found.')
             # end try
 
             try:
                 botTag = content.find_element(by=By.CSS_SELECTOR, value="h2 span[id^='message-username'] span[class^='botText-']").get_attribute('innerText')
-                logging.info(f"Message bot tag: {botTag}")
+                print(f"Message bot tag: {botTag}")
             except NoSuchElementException:
                 isGiveaway = False
-                logging.info('💻 botTag not found.')
+                print('💻 botTag not found.')
 
             # message content
             try:
                 messageContent = content.find_element(by=By.CSS_SELECTOR, value="div[id^='message-content']").get_attribute('innerText')
 
-                logging.info(f"checking message content: {messageContent}")
+                print(f"checking message content: {messageContent}")
 
                 # list of keyword to filter
                 giveawayEndedList = ["grat","congratulation","ended"]
@@ -122,9 +122,10 @@ class AutoDiscord:
                     isGiveaway = False
 
             except NoSuchElementException:
-                logging.info('💻 messageContent not found.')
+                print('💻 messageContent not found.')
             # end try
 
+            print(f'💻 isGiveaway: {isGiveaway}')
             if(isGiveaway):
                 # find reaction button
                 # react to message
