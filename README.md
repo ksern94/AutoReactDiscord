@@ -19,6 +19,8 @@ Things to note:
 ### File configuration 
 
 - Rename `config.json.example` to `config.json` and add/update the information accordingly.
+- Get discord giveaway channel url by accessing discord from your browser.
+![Screenshot](discord_url_sample.png)
 
 ## Setup & Run 
 
