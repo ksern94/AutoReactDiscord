@@ -1,7 +1,8 @@
 # AutoReactDiscord
 This script auto reacts :tada: emoji to last 3 messages in each channel discord url. 
 
-Reacts to `messageAuthor` with `["giveaway"]` included
+Reacts to `messageAuthor` with `["giveaway"]` included.
+
 Exclude react when `botTag` is not found and `messageContent` includes `["grat","congratulation","ended"]`
 
 Things to note:
