@@ -31,7 +31,7 @@ This project is tested and developed on Window. You can probably get this up and
 
 2. Run `./setup.sh` 
 
-3. Run `python3 main.py` or `python3 main.py --bg` to run in background without browser showing
+3. Run `py main.py` or `py main.py --bg` to run in background without browser showing
 
 ## Disclaimer
 
