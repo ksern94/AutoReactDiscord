@@ -100,6 +100,7 @@ class AutoReactDiscord:
                 #     isGiveaway = False
 
             except NoSuchElementException:
+                isGiveaway = False
                 print('💻 messageAuthor not found.')
             # end try
 
