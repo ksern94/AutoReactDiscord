@@ -3,7 +3,7 @@ This script auto reacts :tada: emoji to last 3 messages in each channel discord 
 
 Reacts to `messageAuthor` with `["giveaway"]` included.
 
-Exclude react when `botTag` is not found and `messageContent` includes `["grat","congratulation","ended"]`
+Exclude react when `botTag` is not found and when `messageContent` has `["grat","congratulation","ended"]` in the text
 
 Things to note:
 - slow internet might cause script to not work well.
